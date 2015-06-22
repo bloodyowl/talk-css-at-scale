@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "babel-node --stage 0 scripts/build",
+    "prepublish": "npm run build",
+    "publish": "babel-node --stage 0 scripts/publish",
     "start": "babel-node --stage 0 scripts/dev-server"
   },
   "author": "",
@@ -14,6 +16,7 @@
     "babel-core": "^5.6.1",
     "babel-loader": "^5.1.4",
     "file-loader": "^0.8.4",
+    "gh-pages": "^0.3.1",
     "highlight.js": "^8.6.0",
     "node-libs-browser": "^0.5.2",
     "opn": "^2.0.1",
