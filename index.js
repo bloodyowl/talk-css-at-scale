@@ -23083,7 +23083,6 @@
 	        "div",
 	        {
 	          style: _extends({}, styles.slide, isRunningEnterAnimation && {
-	            WebkitPerspective: "1000px",
 	            transform: "translateX(" + ("" + (comesFrom === "left" ? "-" : "")) + ((1 - enterAnimation) * 100 + "%)"),
 	            WebkitTransform: "translateX(" + ("" + (comesFrom === "left" ? "-" : "")) + ((1 - enterAnimation) * 100 + "%)")
 	          }, isRunningLeaveAnimation && {
@@ -36773,7 +36772,7 @@
 
 	var _Code2 = _interopRequireDefault(_Code);
 
-	var htmlExample = "<button class=\"org-Button org-Button--small org-js-OpenLoginModal\">\n  Login\n</button>\n";
+	var htmlExample = "<button\n  class=\"org-Button org-Button--small org-js-OpenLoginModal\">\n  Login\n</button>\n";
 
 	var _default = (function (_Component) {
 	  var _class = function _default() {
