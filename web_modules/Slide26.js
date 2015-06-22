@@ -1,15 +1,41 @@
 import React, {Component} from "react"
 
 import Slide from "Slide"
-import Code from "Code"
 
 export default class extends Component {
   render() {
     return (
       <Slide {...this.props}>
         <div style={styles.title}>
-          {"Questions ?"}
+          {"Next steps"}
         </div>
+        <div style={styles.subtitle}>
+          {"Inline styles: bénéfices"}
+        </div>
+        <ul style={styles.list}>
+          <li style={styles.listItem}>
+            {"Permet de prioriser les styles"}
+          </li>
+          <li style={styles.listItem}>
+            {"Possède naturellement des fonctions comme "}
+            <em>{"first class citizen"}</em>
+          </li>
+          <li style={styles.listItem}>
+            {"JavaScript dispose déjà d'un outillage intéressant pour" +
+              " l'analyse de code"}
+          </li>
+          <li style={styles.listItem}>
+            {"Rend possible la cohabitation de style & markup dans le même" +
+              " fichier (tout comme avec des WebComponents)"}
+          </li>
+          <li style={styles.listItem}>
+            {"Abolit la spécificité des selecteurs"}
+          </li>
+          <li style={styles.listItem}>
+            {"Évite au browser de parser la page pour dresser la" +
+              " correspondance selector/element"}
+          </li>
+        </ul>
       </Slide>
     )
   }
@@ -17,14 +43,19 @@ export default class extends Component {
 
 const styles = {
   title: {
-    fontSize: "4rem",
+    fontSize: "3rem",
     textAlign: "center",
     fontWeight: 700,
-    position: "absolute",
-    top: "50%",
-    left: 0,
-    right: 0,
-    transform: "translateY(-50%)",
-    WebkitTransform: "translateY(-50%)",
+  },
+  subtitle: {
+    fontSize: "2.5rem",
+    textAlign: "center",
+  },
+  list: {
+    padding: "2rem",
+  },
+  listItem: {
+    fontSize: "2rem",
+    padding: ".5rem 0",
   },
 }

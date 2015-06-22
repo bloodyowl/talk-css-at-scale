@@ -27,6 +27,7 @@ import Slide23 from "Slide23"
 import Slide24 from "Slide24"
 import Slide25 from "Slide25"
 import Slide26 from "Slide26"
+import Slide27 from "Slide27"
 
 import Slides from "Slides"
 
@@ -61,6 +62,7 @@ class App extends Component {
         <Slide24 />
         <Slide25 />
         <Slide26 />
+        <Slide27 />
       </Slides>
     )
   }
