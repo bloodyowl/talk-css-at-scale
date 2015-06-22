@@ -14,17 +14,17 @@ export default class extends Component {
         </div>
         <ul style={styles.list}>
           <li style={styles.listItem}>
-            {"Un language sans scope"}
+            {"Un langage sans scope"}
           </li>
           <li style={styles.listItem}>
-            {"qui transmet automatiquement toute propriété d'un selecteur" +
+            {"qui transmet automatiquement toute propriété d'un sélecteur" +
               " à ses descendants"}
           </li>
           <li style={styles.listItem}>
-            {"qui priorise les selecteurs comme un ivrogne"}
+            {"qui priorise les sélecteurs comme un ivrogne"}
           </li>
           <li style={styles.listItem}>
-            {"qui est regression-friendly™"}
+            {"qui est régression-friendly™"}
           </li>
           <li style={styles.listItem}>
             {"qui rend impossible la prédictabilité de priorisation" +
