@@ -12,9 +12,15 @@ export default class extends Component {
         <div style={styles.subtitle}>
           {"2. OOCSS, SMACSS …"}
         </div>
-        <p style={styles.paragraph}>
-          {"Approches compliquées à apprendre à une équipe junior"}
-        </p>
+        <ul style={styles.list}>
+          <li style={styles.listItem}>
+            {"Approches compliquées à apprendre à une équipe junior"}
+          </li>
+          <li style={styles.listItem}>
+            {"Différents niveaux non adaptés à un découpage en composants" +
+              " (layout, module, theme …)"}
+          </li>
+        </ul>
       </Slide>
     )
   }
@@ -30,9 +36,11 @@ const styles = {
     fontSize: "2.5rem",
     textAlign: "center",
   },
-  paragraph: {
+  list: {
+    padding: "2rem",
+  },
+  listItem: {
     fontSize: "2rem",
-    margin: 0,
-    padding: "1rem 0",
+    padding: ".5rem 0",
   },
 }
