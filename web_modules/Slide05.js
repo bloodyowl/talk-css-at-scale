@@ -17,7 +17,7 @@ export default class extends Component {
         </div>
         <img
           style={styles.wat}
-          src={wat}
+          src={`./${ wat }`}
           alt="wat" />
       </Slide>
     )
