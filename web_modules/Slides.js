@@ -6,6 +6,18 @@ class Slides extends Component {
     index: 0,
   }
 
+  componentWillMount() {
+    const hash = window.location.hash.slice(1)
+    if(hash.length) {
+      const initialSlide = parseInt(hash, 10)
+      if(initialSlide) {
+        this.setState({
+          index: initialSlide,
+        })
+      }
+    }
+  }
+
   componentDidMount() {
     document.addEventListener("keyup", (event) => {
       switch(event.which) {
@@ -37,6 +49,10 @@ class Slides extends Component {
     this.goToSlide(
       this.state.index - 1
     )
+  }
+
+  componentDidUpdate() {
+    window.location.hash = "#" + this.state.index
   }
 
   render() {
