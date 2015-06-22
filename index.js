@@ -32769,7 +32769,7 @@
 	        ),
 	        _react2["default"].createElement("img", {
 	          style: styles.wat,
-	          src: _watJpg2["default"],
+	          src: "./" + _watJpg2["default"],
 	          alt: "wat" })
 	      );
 	    }
