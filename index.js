@@ -33040,22 +33040,22 @@
 	          _react2["default"].createElement(
 	            "li",
 	            { style: styles.listItem },
-	            "Un language sans scope"
+	            "Un langage sans scope"
 	          ),
 	          _react2["default"].createElement(
 	            "li",
 	            { style: styles.listItem },
-	            "qui transmet automatiquement toute propriété d'un selecteur" + " à ses descendants"
+	            "qui transmet automatiquement toute propriété d'un sélecteur" + " à ses descendants"
 	          ),
 	          _react2["default"].createElement(
 	            "li",
 	            { style: styles.listItem },
-	            "qui priorise les selecteurs comme un ivrogne"
+	            "qui priorise les sélecteurs comme un ivrogne"
 	          ),
 	          _react2["default"].createElement(
 	            "li",
 	            { style: styles.listItem },
-	            "qui est regression-friendly™"
+	            "qui est régression-friendly™"
 	          ),
 	          _react2["default"].createElement(
 	            "li",
@@ -33890,7 +33890,7 @@
 	              _react2["default"].createElement(
 	                "li",
 	                { style: styles.listItem },
-	                "Un nœud pouvant qu'exister qu'en tant que descendant" + " d'un ancêtre N est un element du Block N ",
+	                "Un nœud pouvant n'exister qu'en tant que descendant" + " d'un ancêtre N est un element du Block N ",
 	                _react2["default"].createElement(
 	                  "code",
 	                  null,
@@ -34210,7 +34210,7 @@
 	          _react2["default"].createElement(
 	            "li",
 	            { style: styles.listItem },
-	            "Éviter les side effects de la cascade en définissant, " + "les propriétés au niveau le plus bas possible",
+	            "Éviter les side effects de la cascade en définissant " + "les propriétés au niveau le plus bas possible",
 	            _react2["default"].createElement(_Code2["default"], {
 	              language: "css",
 	              code: cssExample })
@@ -34310,7 +34310,7 @@
 	          _react2["default"].createElement(
 	            "li",
 	            { style: styles.listItem },
-	            "Si votre stack vous impose des selecteurs pour les actions, " + "JS, utilisées des classNames uniquement prévus à cet effet",
+	            "Si votre stack vous impose des selecteurs pour les actions " + "JS, utilisez des classNames uniquement prévus à cet effet",
 	            _react2["default"].createElement(_Code2["default"], {
 	              language: "html",
 	              code: htmlExample })
@@ -34410,7 +34410,7 @@
 	          _react2["default"].createElement(
 	            "li",
 	            { style: styles.listItem },
-	            "Ne groupez jamais les media queries, gardez les toujours près" + "des déclarations qu'elles complètent/override",
+	            "Ne groupez jamais les media queries, gardez les toujours près " + "des déclarations qu'elles complètent/override",
 	            _react2["default"].createElement(_Code2["default"], {
 	              language: "css",
 	              code: cssExample })
@@ -34504,7 +34504,7 @@
 	          _react2["default"].createElement(
 	            "li",
 	            { style: styles.listItem },
-	            "Rend trivial la compréhension du markup et du style"
+	            "Rend triviale la compréhension du markup et du style"
 	          ),
 	          _react2["default"].createElement(
 	            "li",
@@ -34515,6 +34515,16 @@
 	            "li",
 	            { style: styles.listItem },
 	            "Apporte naturellement l'isolation des styles"
+	          ),
+	          _react2["default"].createElement(
+	            "li",
+	            { style: styles.listItem },
+	            "Permet d'éliminer facilement le code legacy"
+	          ),
+	          _react2["default"].createElement(
+	            "li",
+	            { style: styles.listItem },
+	            "Permet de repérer les différents niveaux de legacy" + " en changeant de préfixe"
 	          )
 	        )
 	      );
