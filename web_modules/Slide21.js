@@ -25,7 +25,7 @@ export default class extends Component {
         </div>
         <ul style={styles.list}>
           <li style={styles.listItem}>
-            {"Ne groupez jamais les media queries, gardez les toujours près" +
+            {"Ne groupez jamais les media queries, gardez les toujours près " +
              "des déclarations qu'elles complètent/override"}
             <Code
               language="css"
