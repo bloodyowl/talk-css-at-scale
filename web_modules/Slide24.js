@@ -24,7 +24,7 @@ const styles = {
   },
 }
 
-class extends Component {
+export class extends Component {
 
   state = {
     hover: false,
