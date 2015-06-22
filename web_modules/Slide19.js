@@ -24,7 +24,7 @@ export default class extends Component {
         </div>
         <ul style={styles.list}>
           <li style={styles.listItem}>
-            {"Éviter les side effects de la cascade en définissant, " +
+            {"Éviter les side effects de la cascade en définissant " +
               "les propriétés au niveau le plus bas possible"}
             <Code
               language="css"

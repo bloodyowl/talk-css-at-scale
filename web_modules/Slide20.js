@@ -21,8 +21,8 @@ export default class extends Component {
         </div>
         <ul style={styles.list}>
           <li style={styles.listItem}>
-            {"Si votre stack vous impose des selecteurs pour les actions, " +
-              "JS, utilisées des classNames uniquement prévus à cet effet"}
+            {"Si votre stack vous impose des selecteurs pour les actions " +
+              "JS, utilisez des classNames uniquement prévus à cet effet"}
             <Code
               language="html"
               code={htmlExample} />

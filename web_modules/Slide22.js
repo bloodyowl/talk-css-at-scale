@@ -14,7 +14,7 @@ export default class extends Component {
         </div>
         <ul style={styles.list}>
           <li style={styles.listItem}>
-            {"Rend trivial la compréhension du markup et du style"}
+            {"Rend triviale la compréhension du markup et du style"}
           </li>
           <li style={styles.listItem}>
             {"Crée rapidement des automatismes"}

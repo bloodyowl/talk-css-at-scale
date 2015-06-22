@@ -25,7 +25,7 @@ export default class extends Component {
                  " est un Block "}<code>.Block</code>
               </li>
               <li style={styles.listItem}>
-                {"Un nœud pouvant qu'exister qu'en tant que descendant" +
+                {"Un nœud pouvant n'exister qu'en tant que descendant" +
                  " d'un ancêtre N est un element du Block N "}
                  <code>.Block-element</code>
               </li>
