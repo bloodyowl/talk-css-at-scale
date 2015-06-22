@@ -1,4 +1,5 @@
 import React, {Component} from "react"
+import animate from "animate"
 
 import Slide from "Slide"
 import Code from "Code"
@@ -13,6 +14,7 @@ const cssExample =
     }
 `
 
+@animate()
 export default class extends Component {
   render() {
     return (

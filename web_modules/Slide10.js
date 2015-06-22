@@ -1,5 +1,5 @@
-
 import React, {Component} from "react"
+import animate from "animate"
 
 import Slide from "Slide"
 import Code from "Code"
@@ -15,6 +15,7 @@ const cssExample =
 .padding-10 { padding: 10px; }
 `
 
+@animate()
 export default class extends Component {
   render() {
     return (

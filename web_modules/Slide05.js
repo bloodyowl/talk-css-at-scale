@@ -1,10 +1,12 @@
 import React, {Component} from "react"
+import animate from "animate"
 
 import Slide from "Slide"
 import Code from "Code"
 
 import wat from "wat.jpg"
 
+@animate()
 export default class extends Component {
   render() {
     return (

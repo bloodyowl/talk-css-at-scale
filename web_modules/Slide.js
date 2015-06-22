@@ -3,17 +3,45 @@ import React, {Component, PropTypes} from "react"
 class Slide extends Component {
 
   static propTypes = {
-    index: PropTypes.number,
+    enterAnimation: PropTypes.number,
+    leaveAnimation: PropTypes.number,
+    isRunningEnterAnimation: PropTypes.bool,
+    isRunningLeaveAnimation: PropTypes.bool,
+    comesFrom: PropTypes.oneOf([
+      "left",
+      "right",
+    ])
   }
 
   render() {
-    const {title, children, index} = this.props
+    const {
+      title,
+      children,
+      index,
+      enterAnimation,
+      leaveAnimation,
+      isRunningEnterAnimation,
+      isRunningLeaveAnimation,
+      comesFrom,
+    } = this.props
     return (
       <div
         style={{
           ...styles.slide,
-          transform: `translateX(${ index * 100 }vw)`,
-          WebkitTransform: `translateX(${ index * 100 }vw)`,
+          ...isRunningEnterAnimation && {
+            WebkitPerspective: "1000px",
+            transform:
+              `translateX(` +
+                `${ comesFrom === "left" ? "-" : "" }` +
+                `${ (1 - enterAnimation) * 100 }%)`,
+            WebkitTransform:
+              `translateX(` +
+                `${ comesFrom === "left" ? "-" : "" }` +
+                `${ (1 - enterAnimation) * 100 }%)`,
+          },
+          ...isRunningLeaveAnimation && {
+            opacity: (1 - leaveAnimation) * 1,
+          },
         }}>
         {children}
       </div>
@@ -26,11 +54,12 @@ const styles = {
     position: "absolute",
     top: 0,
     left: 0,
-    right: 0,
-    bottom: 0,
+    height: "100vh",
+    width: "100vw",
     fontFamily: `Colfax, "Helvetica Neue", Helvetica, Arial, sans-serif`,
     padding: "1rem",
     overflowY: "auto",
+    backgroundColor: "#eceff0",
   },
 }
 

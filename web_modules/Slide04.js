@@ -1,4 +1,5 @@
 import React, {Component} from "react"
+import animate from "animate"
 
 import Slide from "Slide"
 import Code from "Code"
@@ -17,6 +18,7 @@ style=""          /* specificity = 1,0,0,0 */
 !important        /* specificity = P,T,D,R */
 `
 
+@animate()
 export default class extends Component {
   render() {
     return (

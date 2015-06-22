@@ -1,9 +1,11 @@
-import React, {Component, Children, cloneElement} from "react"
+import React, {Component, Children, cloneElement, addons} from "react/addons"
+const {TransitionGroup} = addons
 
 class Slides extends Component {
 
   state = {
     index: 0,
+    from: null,
   }
 
   componentWillMount() {
@@ -34,8 +36,10 @@ class Slides extends Component {
   goToSlide(index) {
     const {children} = this.props
     const count = Children.count(children)
+    const nextIndex = Math.min(Math.max(index, 0), count - 1)
     this.setState({
-      index: Math.min(Math.max(index, 0), count - 1),
+      index: nextIndex,
+      comesFrom: this.state.index < nextIndex ? "right" : "left",
     })
   }
 
@@ -57,7 +61,7 @@ class Slides extends Component {
 
   render() {
     const {children} = this.props
-    const {index} = this.state
+    const {index, comesFrom} = this.state
     return (
       <div style={styles.container}>
         <div style={styles.progressBar}>
@@ -66,15 +70,9 @@ class Slides extends Component {
             width: `${ index / (Children.count(children) - 1) * 100 }%`,
           }} />
         </div>
-        <div
-          style={{
-            ...styles.slides,
-            transform: `translateX(${ -100 * index }vw)`,
-            WebkitTransform: `translateX(${ -100 * index }vw)`,
-          }}>
-          {Children.map(children, (child, index) =>
-            cloneElement(child, { index }))}
-        </div>
+        <TransitionGroup component="div">
+          {cloneElement(children[index], {comesFrom})}
+        </TransitionGroup>
       </div>
     )
   }
@@ -92,12 +90,6 @@ const styles = {
     backgroundColor: "#eceff0",
     color: "#5f5f5f",
   },
-  slides: {
-    position: "relative",
-    height: "100vh",
-    transition: "300ms ease-in-out transform",
-    WebkitTransition: "300ms ease-in-out -webkit-transform",
-  },
   progressBar: {
     position: "absolute",
     top: 0,
@@ -105,6 +97,7 @@ const styles = {
     right: 0,
     height: ".25rem",
     backgroundColor: "#ccc",
+    zIndex: 100,
   },
   progress: {
     position: "absolute",
