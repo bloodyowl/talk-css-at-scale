@@ -22,6 +22,13 @@ export default class extends Component {
           <li style={styles.listItem}>
             {"Apporte naturellement l'isolation des styles"}
           </li>
+          <li style={styles.listItem}>
+            {"Permet d'éliminer facilement le code legacy"}
+          </li>
+          <li style={styles.listItem}>
+            {"Permet de repérer les différents niveaux de legacy" +
+              " en changeant de préfixe"}
+          </li>
         </ul>
       </Slide>
     )
