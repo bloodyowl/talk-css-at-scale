@@ -5,7 +5,8 @@ import Slide from "Slide"
 import Code from "Code"
 
 const htmlExample =
-`<button class="org-Button org-Button--small org-js-OpenLoginModal">
+`<button
+  class="org-Button org-Button--small org-js-OpenLoginModal">
   Login
 </button>
 `
