@@ -29,7 +29,6 @@ class Slide extends Component {
         style={{
           ...styles.slide,
           ...isRunningEnterAnimation && {
-            WebkitPerspective: "1000px",
             transform:
               `translateX(` +
                 `${ comesFrom === "left" ? "-" : "" }` +
