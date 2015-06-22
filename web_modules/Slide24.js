@@ -79,11 +79,4 @@ const styles = {
     fontSize: "2.5rem",
     textAlign: "center",
   },
-  list: {
-    padding: "2rem",
-  },
-  listItem: {
-    fontSize: "2rem",
-    padding: ".5rem 0",
-  },
 }
