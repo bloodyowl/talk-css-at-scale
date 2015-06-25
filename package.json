@@ -24,5 +24,8 @@
     "react-hot-loader": "^1.2.7",
     "webpack": "^1.9.11",
     "webpack-dev-server": "^1.9.0"
+  },
+  "dependencies": {
+    "bloody-react-transition-child": "^1.0.0"
   }
 }

@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import animate from "animate"
+import transitionChild from "bloody-react-transition-child"
 
 import Slide from "Slide"
 import Code from "Code"
@@ -18,7 +18,7 @@ style=""          /* specificity = 1,0,0,0 */
 !important        /* specificity = P,T,D,R */
 `
 
-@animate()
+@transitionChild()
 export default class extends Component {
   render() {
     return (

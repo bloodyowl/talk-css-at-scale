@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import animate from "animate"
+import transitionChild from "bloody-react-transition-child"
 
 import Slide from "Slide"
 import Code from "Code"
@@ -19,7 +19,7 @@ const scssExample =
 }
 `
 
-@animate()
+@transitionChild()
 export default class extends Component {
   render() {
     return (
